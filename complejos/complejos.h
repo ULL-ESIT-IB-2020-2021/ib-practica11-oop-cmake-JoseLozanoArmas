@@ -14,5 +14,18 @@
   *      
   */
 
+#ifndef COMPLEJOS_H
+#define COMPLEJOS_H
 
-//meter la declaracion
+
+ class Complejo {
+ public:
+  int c_parte_real_{};
+  int c_parte_imaginaria_{};
+  
+  Complejo Suma(Complejo complejo_1, Complejo complejo_2);
+  void Complejo MostrarSuma();
+  Complejo Resta(Complejo complejo_1, Complejo complejo_2);
+  void Complejo MostrarResta();
+ };
+ #endif

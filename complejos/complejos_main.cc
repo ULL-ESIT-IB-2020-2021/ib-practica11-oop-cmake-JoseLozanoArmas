@@ -15,18 +15,18 @@
   *      
   */
 #include <iostream>
-
-class Complejo {
- public:
-  int c_parte_real_{};
-  int c_parte_imaginaria_{};
-};
+#include <vector>
+#include <string>
+#include "complejos_funciones.cc"
 
 int main (int argc, char* argv[]){
-  int parte_real = 0; 
-  int parte_imaginaria = 0;
+  Complejo complejo_1 {4,5};
+  Complejo complejo_2 {7,-8};
+  Complejo resultado;
+  resultado = resultado.Suma(complejo_1, complejo_2);
+  resultado.MostrarSuma();
 
-  std::cout << parte_real << std::endl; 
-
-
+  resultado = resultado.Resta(complejo_1, complejo_2);
+  resultado.MostrarResta();
+  
 }
